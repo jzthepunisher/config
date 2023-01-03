@@ -14,6 +14,10 @@ spring:
     driverClassName: org.postgresql.Driverok
     testWhileIdle: true
     validationQuery: SELECT 1
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
 
 server:
   port: 8081
